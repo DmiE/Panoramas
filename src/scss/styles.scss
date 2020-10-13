@@ -1,0 +1,119 @@
+$breakpoint--tiny: 360px;
+$breakpoint--very-small: 480px;
+$breakpoint--small: 600px;
+$breakpoint--medium: 768px;
+$breakpoint--large: 1024px;
+$breakpoint--semi-large: 1200px;
+$breakpoint--very-large: 1660px;
+
+$gold: #99825d;
+$navy-blue: #002349;
+
+@mixin tiny {
+  @media (min-width: #{$breakpoint--tiny}) {
+    @content;
+  }
+}
+@mixin very-small {
+  @media (min-width: #{$breakpoint--very-small}) {
+    @content;
+  }
+}
+@mixin small {
+  @media (min-width: #{$breakpoint--small}) {
+    @content;
+  }
+}
+@mixin medium {
+  @media (min-width: #{$breakpoint--medium}) {
+    @content;
+  }
+}
+@mixin large {
+  @media (min-width: #{$breakpoint--large}) {
+    @content;
+  }
+}
+@mixin semi-large {
+  @media (min-width: #{$breakpoint--semi-large}) {
+    @content;
+  }
+}
+@mixin very-large {
+  @media (min-width: #{$breakpoint--very-large}) {
+    @content;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.pano_container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.psv-marker {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.psv-tooltip {
+  text-align: center;
+}
+
+.psv-marker {
+  opacity: 0.85;
+  transition: opacity 0.3s;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.pano__list {
+  display: block;
+  width: 100%;
+  height: 100vh;
+}
+
+.pano__list_item {
+  height: 33vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px solid #857451;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.pano__link {
+  font-size: 30px;
+  text-decoration: none;
+  color: #857451;
+  text-transform: capitalize;
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 33vh;
+  background-color: #eee;
+  transition: background-color 0.3s;
+
+  @include medium {
+    font-size: 40px;
+  }
+
+  @include large {
+    font-size: 50px;
+  }
+
+  &:hover {
+    background-color: #002349;
+  }
+}

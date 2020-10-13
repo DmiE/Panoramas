@@ -1,0 +1,30 @@
+{
+  "name": "panorama",
+  "version": "1.0.0",
+  "description": "360 deg photo panorama",
+  "main": "index.html",
+  "scripts": {
+    "dev": "./node_modules/.bin/parcel src/index.html --no-cache",
+    "deploy": "./node_modules/.bin/parcel build src/index.html --public-url ./ -d ./docs",
+    "bld": "./node_modules/.bin/parcel build src/index.html --public-url ./ -d ./dist",
+    "build": "./node_modules/.bin/parcel build src/index.html --public-url ./ -d ./dist",
+    "format": "./node_modules/.bin/prettier --write src/**/*.{html,scss,js}",
+    "lint": "./node_modules/.bin/eslint src/**/*.js",
+    "lint:fix": "./node_modules/.bin/eslint --fix src/**/*.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dawid Mieszczak",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "4.1.10",
+    "eslint": "6.1.0",
+    "eslint-config-prettier": "6.7.0",
+    "eslint-plugin-prettier": "3.1.1",
+    "parcel-bundler": "1.12.4",
+    "prettier": "1.19.1",
+    "sass": "1.23.6"
+  },
+  "dependencies": {
+    "photo-sphere-viewer": "4.0.7"
+  }
+}
