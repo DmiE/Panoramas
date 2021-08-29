@@ -11,7 +11,7 @@ import schoolMarker from '../assets/school-marker.svg';
 import sportMarker from '../assets/sport-marker.svg';
 import museumMarker from '../assets/museum-marker.svg';
 import parkingMarker from '../assets/parking-marker.svg';
-import restaurantMarker from '../assets/restaurant-marker.svg'
+import restaurantMarker from '../assets/restaurant-marker.svg';
 
 const viewer = new Viewer({
   container: document.querySelector('#jagielka-pano'),
@@ -128,14 +128,14 @@ const viewer = new Viewer({
             // polygon marker
             id: 'polygon',
             polylineRad: [
-              [1.3860, -1.064],
-              [0.6300, -0.797],
+              [1.386, -1.064],
+              [0.63, -0.797],
               [6.0042, -0.8534],
-              [6.244, -0.4080],
+              [6.244, -0.408],
               [0.3392, -0.4226],
-              [0.7150, -0.7683],
-              [1.416, -1.000],
-              [1.3860, -1.064]
+              [0.715, -0.7683],
+              [1.416, -1.0],
+              [1.386, -1.064]
             ],
             svgStyle: {
               fill: 'rgba(200, 0, 0, 0.2)',
@@ -155,11 +155,11 @@ const viewer = new Viewer({
             width: 35,
             height: 50,
             anchor: 'bottom center',
-            tooltip: 'Park Rozrywki Wola - 2,8km',
+            tooltip: 'Park Rozrywki Wola - 2,8km'
           },
           {
             id: 'przedszkole-abc-marker',
-            longitude: 1.60,
+            longitude: 1.6,
             latitude: -0.018,
             image: schoolMarker,
             width: 35,
@@ -245,7 +245,7 @@ const viewer = new Viewer({
             width: 35,
             height: 50,
             anchor: 'bottom center',
-            tooltip: 'Parking Park and Ride - 2km<br/>Kolejka do dworca centralnego, dojazd kolejki 5 min',
+            tooltip: 'Parking Park and Ride - 2km<br/>Kolejka do dworca centralnego, dojazd kolejki 5 min'
           },
           {
             id: 'gospoda-marker',
@@ -256,7 +256,7 @@ const viewer = new Viewer({
             height: 50,
             anchor: 'bottom center',
             tooltip: 'Gospoda na Woli - 3,1km'
-          },
+          }
         ]
       }
     ]
