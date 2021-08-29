@@ -1,6 +1,6 @@
 import { Viewer } from 'photo-sphere-viewer';
 import MarkersPlugin from 'photo-sphere-viewer/dist/plugins/markers';
-import desktopPano from '../assets/jadwigi-desktop.jpg';
+import desktopPano from '../assets/jadwigi-mobile.jpg';
 import logoMarker from '../assets/logo-marker.svg';
 import markerIcon from '../assets/map-marker-blue.png';
 import shopMarker from '../assets/shop-marker.svg';
